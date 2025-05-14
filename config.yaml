@@ -1,0 +1,276 @@
+# Channel separator used for user-specific channels (e.g., 🔹┃elonmusk)
+CHANNEL_SEPARATOR: ┃
+
+CATEGORIES:
+  INFORMATION: ▓▓ 📘 System Info ▓▓
+  TWITTER: ▓▓📢 Tweet Feed ▓▓
+  STOCKS: ▓▓📈 Equity Zone ▓▓
+  CRYPTO: ▓▓🪙 Chain Watch ▓▓
+  FOREX: ▓▓🌍 Currency Flow ▓▓
+  USERS: ▓▓🧑 User Streams ▓▓
+  REDDIT: ▓▓📄 Reddit Signals ▓▓
+  NFTS: ▓▓🎨 NFT Radar ▓▓
+
+####################
+### AUTO UPDATES ###
+####################
+LOOPS:
+  TIMELINE:
+    ENABLED: true
+    CHARTS_CHANNEL: 🔺┃price-charts
+    TEXT_CHANNEL: 🗨️┃market-talk
+    UNKNOWN_CHARTS: 🌀┃unreadable-charts
+
+    CRYPTO:
+      ENABLED: true
+
+    STOCKS:
+      ENABLED: true
+
+    FOREX:
+      ENABLED: true
+
+    IMAGES:
+      ENABLED: true
+      CHANNEL: 🖼️┃tweet-images
+
+    OTHER:
+      ENABLED: true
+      CHANNEL: ❔┃misc-tweets
+
+    NEWS:
+      ENABLED: true
+      FOLLOWING: ["DeItaone", "FirstSquawk", "EPSGUID", "eWhispers"]
+      CHANNEL: 🗞️┃headline-feed
+
+      CRYPTO:
+        ENABLED: true
+        FOLLOWING: ["BrieflyCrypto"]
+
+  ASSETS:
+    ENABLED: true
+    CHANNEL_PREFIX: 🌟┃
+
+  CRYPTO_CATEGORIES:
+    ENABLED: true
+    CHANNEL: 📚┃crypto-tags
+
+  EARNINGS_OVERVIEW:
+    ENABLED: true
+    CHANNEL: 📆┃earnings-digest
+
+  EVENTS:
+    ENABLED: true
+    CHANNEL: 📢┃alerts
+
+    STOCKS:
+      ENABLED: true
+
+    CRYPTO:
+      ENABLED: true
+
+  FUNDING:
+    ENABLED: true
+    CHANNEL: 💼┃funding-flow
+
+  FUNDING_HEATMAP:
+    ENABLED: true
+    CHANNEL: 🧊┃funding-intensity
+
+  GAINERS:
+    ENABLED: true
+    CHANNEL: 🚀┃market-climbers
+
+    CRYPTO:
+      ENABLED: true
+
+    STOCKS:
+      ENABLED: true
+
+  IDEAS:
+    ENABLED: true
+    CHANNEL: 💡┃trading-ideas
+
+    CRYPTO:
+      ENABLED: true
+
+    STOCKS:
+      ENABLED: true
+
+    FOREX:
+      ENABLED: true
+
+  INDEX:
+    ENABLED: true
+    CHANNEL: 📊┃index-watch
+
+    STOCKS:
+      ENABLED: true
+
+    CRYPTO:
+      ENABLED: true
+
+    FOREX:
+      ENABLED: true
+
+  LIQUIDATIONS:
+    ENABLED: true
+    CHANNEL: 💧┃liquidation-feed
+
+  LOSERS:
+    ENABLED: true
+    CHANNEL: 🕳️┃market-fallers
+
+    CRYPTO:
+      ENABLED: true
+
+    STOCKS:
+      ENABLED: true
+
+  NEW_LISTINGS:
+    ENABLED: true
+    CHANNEL: 🆕┃token-launches
+
+  NFTS:
+    ENABLED: true
+
+    TOP:
+      ENABLED: true
+      CHANNEL: 🏅┃top-nfts
+
+    UPCOMING:
+      ENABLED: false
+      CHANNEL: 🔜┃nft-upcoming
+
+    P2E:
+      ENABLED: true
+      CHANNEL: 🎮┃play-to-earn
+
+  OVERVIEW:
+    ENABLED: true
+    CHANNEL: 📌┃market-summary
+
+    STOCKS:
+      ENABLED: true
+
+    CRYPTO:
+      ENABLED: true
+
+  RAINBOW_CHART:
+    ENABLED: true
+    CHANNEL: 🌈┃rainbow-metrics
+
+  REDDIT:
+    ENABLED: true
+
+    WALLSTREETBETS:
+      ENABLED: true
+      CHANNEL: 💥┃wsb-tracker
+
+    CRYPTOMOONSHOTS:
+      ENABLED: true
+      CHANNEL: 🌕┃moonshot-hype
+
+  RSI_HEATMAP:
+    ENABLED: true
+    CHANNEL: 🌡️┃rsi-heat-check
+
+  SECTOR_SNAPSHOT:
+    ENABLED: true
+    CHANNEL: 🧭┃sector-glance
+
+  SPY_HEATMAP:
+    ENABLED: true
+    CHANNEL: 🧮┃spy-zones
+
+  STOCK_HALTS:
+    ENABLED: true
+    CHANNEL: ⛔┃halt-feed
+
+  STOCKTWITS:
+    ENABLED: true
+    CHANNEL: 🧵┃twits-stream
+
+  TREEMAP:
+    ENABLED: true
+    CHANNEL: 🌳┃treemap-view
+
+  TRENDING:
+    ENABLED: true
+    CHANNEL: 🔍┃now-trending
+
+    CRYPTO:
+      ENABLED: true
+
+    STOCKS:
+      ENABLED: true
+
+    NFTS:
+      ENABLED: true
+
+    AFTERHOURS:
+      ENABLED: true
+      CHANNEL: 🌙┃after-close
+
+    PREMARKET:
+      ENABLED: true
+      CHANNEL: 🌅┃pre-open
+
+  TRADES:
+    ENABLED: false
+    CHANNEL: 💱┃user-trades
+
+  YIELD:
+    ENABLED: true
+    CHANNEL: 🏦┃yield-tracker
+
+###################
+### USER COMMANDS ###
+###################
+
+COMMANDS:
+  ANALYZE:
+    ENABLED: true
+    ROLE: None
+
+  EARNINGS:
+    ENABLED: true
+    ROLE: None
+
+  HELP:
+    ENABLED: true
+    ROLE: None
+
+  PORTFOLIO:
+    ENABLED: true
+    ROLE: None
+
+  RESTART:
+    ENABLED: true
+    ROLE: Admin
+
+  SENTIMENT:
+    ENABLED: true
+    ROLE: None
+
+  STOCK:
+    ENABLED: true
+    ROLE: None
+
+##################
+### BOT EVENTS ###
+##################
+
+LISTENERS:
+  ON_RAW_REACTION_ADD:
+    ENABLED: true
+    CHANNEL: ✨┃user-highlights
+    ROLE: Admin
+
+  ON_MEMBER_JOIN:
+    ENABLED: true
+
+LOGGING_LEVEL: INFO
+
+DEBUG_MODE_TYPE: "exclude"
+DEBUG_COGS:
