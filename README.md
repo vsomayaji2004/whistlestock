@@ -4,7 +4,7 @@
 
 ---
 
-## ⚙️ Features
+## Features
 
 - **Tweet Sentiment Tracking**: Detect and summarize public sentiment based on real-time tweets.
 - **Market Signal Highlights**: Analyze trending tickers and price movement patterns.
@@ -19,7 +19,7 @@
 
 ---
 
-## 🔧 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repo
